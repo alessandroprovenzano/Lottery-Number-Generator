@@ -1,9 +1,7 @@
-# Lottery Number Generator
 
 from random import choice
 import console
 
-#Helper function to input a number within a given range:
 def input_number(prompt, min_value, max_value):
 	value = None
 	while value is None:
@@ -17,7 +15,6 @@ def input_number(prompt, min_value, max_value):
 			value = None
 	return value
 
-#Print the title and input the range of numbers:
 console.clear()
 title = 'Lottery Number Generator'
 print(title)
@@ -27,7 +24,6 @@ maximum = input_number('Largest number: ', minimum, 9999)
 n = input_number('How many numbers do you want to draw? ', 
                  1, maximum - minimum + 1)
 
-#Pick the numbers and print the results:
 all_numbers = list(range(minimum, maximum + 1))
 selection = []
 for i in range(n):
