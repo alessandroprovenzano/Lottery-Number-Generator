@@ -1,6 +1,5 @@
 
 from random import choice
-import console
 
 def input_number(prompt, min_value, max_value):
 	value = None
@@ -15,7 +14,6 @@ def input_number(prompt, min_value, max_value):
 			value = None
 	return value
 
-console.clear()
 title = 'Lottery Number Generator'
 print(title)
 print('=' * 40)
